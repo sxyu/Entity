@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D2C18A5-E8B3-4884-A40D-15EBD7982A87}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Entity.My.MyApplication</StartupObject>
+    <RootNamespace>Entity</RootNamespace>
+    <AssemblyName>Entity</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Entity.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42024,42030,42032,42036,42099,42104,42105,42106,42107,42108,42109</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Entity.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42024,42030,42032,42036,42099,42104,42105,42106,42107,42108,42109</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\en.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Entity.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42024,42030,42032,42036,42099,42104,42105,42106,42107,42108,42109</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Entity.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42024,42030,42032,42036,42099,42104,42105,42106,42107,42108,42109</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CoreAudioApi, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CoreAudioApi.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio">
+      <HintPath>..\..\0Source\NAudio\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="0App\Frm5ShowUI.Designer.vb">
+      <DependentUpon>Frm5ShowUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\Frm5ShowUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\InitialSetup\FrmCinematic.Designer.vb">
+      <DependentUpon>FrmCinematic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\InitialSetup\FrmCinematic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm0ProjectionC.Designer.vb">
+      <DependentUpon>IFm0ProjectionC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm0ProjectionC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm0ProjectionM.Designer.vb">
+      <DependentUpon>IFm0ProjectionM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm0ProjectionM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm0ProjectionA.Designer.vb">
+      <DependentUpon>IFm0ProjectionA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm0ProjectionA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm3Tips.Designer.vb">
+      <DependentUpon>IFm3Tips.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm3Tips.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFmBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm1LightN.Designer.vb">
+      <DependentUpon>IFm1LightN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm1LightN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm2Security.Designer.vb">
+      <DependentUpon>IFm2Security.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm2Security.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\SettingsViews\SVw2Admin.Designer.vb">
+      <DependentUpon>SVw2Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\SettingsViews\SVw2Admin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0App\SettingsViews\SVw1Resources.Designer.vb">
+      <DependentUpon>SVw1Resources.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\SettingsViews\SVw1Resources.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0App\Views\Vw1Light.Designer.vb">
+      <DependentUpon>Vw1Light.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\Views\Vw1Light.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0App\Views\Vw4Cues.Designer.vb">
+      <DependentUpon>Vw4Cues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\Views\Vw4Cues.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\General\Selectors\DiagSelectAudio.Designer.vb">
+      <DependentUpon>DiagSelectAudio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\General\Selectors\DiagSelectAudio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\General\Selectors\DiagSelectImage.Designer.vb">
+      <DependentUpon>DiagSelectImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\General\Selectors\DiagSelectImage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm1LightQ.Designer.vb">
+      <DependentUpon>IFm1LightQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\InitialSetup\IFm1LightQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\Alert.Designer.vb">
+      <DependentUpon>Alert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\Alert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\DiagViewCue.Designer.vb">
+      <DependentUpon>DiagViewCue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\DiagViewCue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\DiagCOM.Designer.vb">
+      <DependentUpon>DiagCOM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\DiagCOM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\DiagWebViewer.Designer.vb">
+      <DependentUpon>DiagWebViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\DiagWebViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\General\ImageGen\DiagPaint.Designer.vb">
+      <DependentUpon>DiagPaint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\General\ImageGen\DiagPaint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\Tools\DiagMPlayer.Designer.vb">
+      <DependentUpon>DiagMPlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\Tools\DiagMPlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\General\Settings\DiagLQuickSetup.Designer.vb">
+      <DependentUpon>DiagLQuickSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\General\Settings\DiagLQuickSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\General\ImageGen\DiagPaint_BG.Designer.vb">
+      <DependentUpon>DiagPaint_BG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\General\ImageGen\DiagPaint_BG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2Namespaces\ShowSys.vb" />
+    <Compile Include="3Modules\Images.vb" />
+    <Compile Include="3Modules\Settings.vb" />
+    <Compile Include="3Modules\Update.vb" />
+    <Compile Include="3Modules\Shapes.vb" />
+    <Compile Include="3Modules\Tabs.vb" />
+    <Compile Include="4Classes\Project\SettingsReader.vb" />
+    <Compile Include="4Classes\Project\WorkingDirectory.vb" />
+    <Compile Include="4Classes\Types\Crypto3DS.vb" />
+    <Compile Include="3Modules\Crypto.vb" />
+    <Compile Include="4Classes\Project\EntityProject.vb" />
+    <Compile Include="4Classes\Types\PjxEngine.vb" />
+    <Compile Include="4Classes\Types\AutoPjxEngine.vb" />
+    <Compile Include="5Controls\ShowHeaderBar.Designer.vb">
+      <DependentUpon>ShowHeaderBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5Controls\ShowHeaderBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="5Controls\Slider.Designer.vb">
+      <DependentUpon>Slider.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5Controls\Slider.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="5Controls\ListViewX.Designer.vb">
+      <DependentUpon>ListViewX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5Controls\ListViewX.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="0App\SettingsViews\SVw0Projection.Designer.vb">
+      <DependentUpon>SVw0Projection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\SettingsViews\SVw0Projection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0App\Frm4Settings.Designer.vb">
+      <DependentUpon>Frm4Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\Frm4Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2Namespaces\CueSys.vb" />
+    <Compile Include="4Classes\Types\DmxEngine.vb" />
+    <Compile Include="2Namespaces\ImageIndexer.vb" />
+    <Compile Include="4Classes\Events\ScreenChangedEvent.vb" />
+    <Compile Include="2Namespaces\KeyFrame.vb" />
+    <Compile Include="4Classes\Types\RectangleX.vb" />
+    <Compile Include="5Controls\HeaderBar.Designer.vb">
+      <DependentUpon>HeaderBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5Controls\HeaderBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="6Misc\Lighting Board\FrmLightingBd.Designer.vb">
+      <DependentUpon>FrmLightingBd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="6Misc\Lighting Board\FrmLightingBd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\General\Add\DiagAddResAud.Designer.vb">
+      <DependentUpon>DiagAddResAud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\General\Add\DiagAddResAud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\General\Add\DiagAddResImg.Designer.vb">
+      <DependentUpon>DiagAddResImg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\General\Add\DiagAddResImg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\Frm3Viewer.Designer.vb">
+      <DependentUpon>Frm3Viewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\Frm3Viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\General\Selectors\DiagGlobalRes.Designer.vb">
+      <DependentUpon>DiagGlobalRes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\General\Selectors\DiagGlobalRes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\DiagVolume.Designer.vb">
+      <DependentUpon>DiagVolume.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\DiagVolume.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\General\DiagYoutube.Designer.vb">
+      <DependentUpon>DiagYoutube.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\General\DiagYoutube.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\DiagImageView.Designer.vb">
+      <DependentUpon>DiagImageView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\DiagImageView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5Controls\CoolTrackBar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\DiagAbout.Designer.vb">
+      <DependentUpon>DiagAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\Popups\DiagAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\Frm1Credentials.Designer.vb">
+      <DependentUpon>Frm1Credentials.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\Frm1Credentials.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\Loading\FrmWait.Designer.vb">
+      <DependentUpon>FrmWait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\Loading\FrmWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6Misc\FrmUpdate.Designer.vb">
+      <DependentUpon>FrmUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="6Misc\FrmUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6Misc\SecondMonitor.Designer.vb">
+      <DependentUpon>SecondMonitor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="6Misc\SecondMonitor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6Misc\Lighting Board\FrmLightBox.Designer.vb">
+      <DependentUpon>FrmLightBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="6Misc\Lighting Board\FrmLightBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5Controls\PercentSetter.Designer.vb">
+      <DependentUpon>PercentSetter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5Controls\PercentSetter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="5Controls\FlatProgressBar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="0App\Views\Vw0Home.Designer.vb">
+      <DependentUpon>Vw0Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\Views\Vw0Home.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0App\Views\Vw2Audio.Designer.vb">
+      <DependentUpon>Vw2Audio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\Views\Vw2Audio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0App\Views\Vw3Images.Designer.vb">
+      <DependentUpon>Vw3Images.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\Views\Vw3Images.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\Loading\FrmPrepShow.Designer.vb">
+      <DependentUpon>FrmPrepShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\Loading\FrmPrepShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\Frm0Loading.Designer.vb">
+      <DependentUpon>Frm0Loading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="0App\Frm0Loading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Dialogs\Loading\FrmProcessing.Designer.vb">
+      <DependentUpon>FrmProcessing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\Loading\FrmProcessing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Settings.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\Input\DiagTextInput.Designer.vb">
+      <DependentUpon>DiagTextInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1Dialogs\Input\DiagTextInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\Frm2Launcher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0App\Frm2Launcher.Designer.vb">
+      <DependentUpon>Frm2Launcher.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3Modules\Gen.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="0App\Frm5ShowUI.resx">
+      <DependentUpon>Frm5ShowUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\InitialSetup\FrmCinematic.resx">
+      <DependentUpon>FrmCinematic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\InitialSetup\IFm0ProjectionC.resx">
+      <DependentUpon>IFm0ProjectionC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\InitialSetup\IFm0ProjectionM.resx">
+      <DependentUpon>IFm0ProjectionM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\InitialSetup\IFm0ProjectionA.resx">
+      <DependentUpon>IFm0ProjectionA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\InitialSetup\IFm3Tips.resx">
+      <DependentUpon>IFm3Tips.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\InitialSetup\IFmBase.resx">
+      <DependentUpon>IFmBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\InitialSetup\IFm1LightN.resx">
+      <DependentUpon>IFm1LightN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\InitialSetup\IFm2Security.resx">
+      <DependentUpon>IFm2Security.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\SettingsViews\SVw2Admin.resx">
+      <DependentUpon>SVw2Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\SettingsViews\SVw1Resources.resx">
+      <DependentUpon>SVw1Resources.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\SettingsViews\SVw0Projection.resx">
+      <DependentUpon>SVw0Projection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\Views\Vw1Light.resx">
+      <DependentUpon>Vw1Light.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\Views\Vw4Cues.resx">
+      <DependentUpon>Vw4Cues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\Views\Vw3Images.resx">
+      <DependentUpon>Vw3Images.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\Frm4Settings.resx">
+      <DependentUpon>Frm4Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\General\Selectors\DiagSelectAudio.resx">
+      <DependentUpon>DiagSelectAudio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\General\Selectors\DiagSelectImage.resx">
+      <DependentUpon>DiagSelectImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\InitialSetup\IFm1LightQ.resx">
+      <DependentUpon>IFm1LightQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\Popups\Alert.resx">
+      <DependentUpon>Alert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\Popups\DiagViewCue.resx">
+      <DependentUpon>DiagViewCue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\Popups\DiagCOM.resx">
+      <DependentUpon>DiagCOM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\Popups\DiagWebViewer.resx">
+      <DependentUpon>DiagWebViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\General\ImageGen\DiagPaint.resx">
+      <DependentUpon>DiagPaint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\Tools\DiagMPlayer.resx">
+      <DependentUpon>DiagMPlayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\General\Settings\DiagLQuickSetup.resx">
+      <DependentUpon>DiagLQuickSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\General\ImageGen\DiagPaint_BG.resx">
+      <DependentUpon>DiagPaint_BG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5Controls\ShowHeaderBar.resx">
+      <DependentUpon>ShowHeaderBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5Controls\Slider.resx">
+      <DependentUpon>Slider.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5Controls\HeaderBar.resx">
+      <DependentUpon>HeaderBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6Misc\Lighting Board\FrmLightingBd.resx">
+      <DependentUpon>FrmLightingBd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\General\Add\DiagAddResAud.resx">
+      <DependentUpon>DiagAddResAud.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\General\Add\DiagAddResImg.resx">
+      <DependentUpon>DiagAddResImg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\Frm3Viewer.resx">
+      <DependentUpon>Frm3Viewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\General\Selectors\DiagGlobalRes.resx">
+      <DependentUpon>DiagGlobalRes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\Popups\DiagVolume.resx">
+      <DependentUpon>DiagVolume.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\General\DiagYoutube.resx">
+      <DependentUpon>DiagYoutube.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\Popups\DiagImageView.resx">
+      <DependentUpon>DiagImageView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\Popups\DiagAbout.resx">
+      <DependentUpon>DiagAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\Frm1Credentials.resx">
+      <DependentUpon>Frm1Credentials.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\Loading\FrmWait.resx">
+      <DependentUpon>FrmWait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6Misc\FrmUpdate.resx">
+      <DependentUpon>FrmUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6Misc\SecondMonitor.resx">
+      <DependentUpon>SecondMonitor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6Misc\Lighting Board\FrmLightBox.resx">
+      <DependentUpon>FrmLightBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5Controls\PercentSetter.resx">
+      <DependentUpon>PercentSetter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\Views\Vw0Home.resx">
+      <DependentUpon>Vw0Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\Views\Vw2Audio.resx">
+      <DependentUpon>Vw2Audio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\Loading\FrmPrepShow.resx">
+      <DependentUpon>FrmPrepShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\Frm0Loading.resx">
+      <DependentUpon>Frm0Loading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\Loading\FrmProcessing.resx">
+      <DependentUpon>FrmProcessing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Dialogs\Input\DiagTextInput.resx">
+      <DependentUpon>DiagTextInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0App\Frm2Launcher.resx">
+      <DependentUpon>Frm2Launcher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\segoeui.ttf" />
+    <None Include="Resources\seguisym.ttf" />
+    <None Include="Resources\YouTube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\en.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Video.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entity.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\English.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Headphones.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credits.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CPOL.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MSPL.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MSPL1.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U-Hill_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingsBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingsIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ModifyBtn.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath) $(ProjectDir)bin\Release\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

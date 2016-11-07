@@ -1,0 +1,91 @@
+rackBar()
+            Me.barB5 = New Entity._5Controls.CoolTrackBar()
+            Me.barA12 = New Entity._5Controls.CoolTrackBar()
+            Me.barB4 = New Entity._5Controls.CoolTrackBar()
+            Me.barA7 = New Entity._5Controls.CoolTrackBar()
+            Me.barB6 = New Entity._5Controls.CoolTrackBar()
+            Me.barB10 = New Entity._5Controls.CoolTrackBar()
+            Me.barA8 = New Entity._5Controls.CoolTrackBar()
+            Me.barB3 = New Entity._5Controls.CoolTrackBar()
+            Me.barB9 = New Entity._5Controls.CoolTrackBar()
+            Me.barA11 = New Entity._5Controls.CoolTrackBar()
+            Me.barA6 = New Entity._5Controls.CoolTrackBar()
+            Me.barB2 = New Entity._5Controls.CoolTrackBar()
+            Me.barA4 = New Entity._5Controls.CoolTrackBar()
+            Me.barB7 = New Entity._5Controls.CoolTrackBar()
+            Me.barA5 = New Entity._5Controls.CoolTrackBar()
+            Me.barB8 = New Entity._5Controls.CoolTrackBar()
+            Me.barA9 = New Entity._5Controls.CoolTrackBar()
+            Me.barA10 = New Entity._5Controls.CoolTrackBar()
+            CType(Me.numPG, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.numCI, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.numStart, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.pnlBack.SuspendLayout()
+            Me.pnlDocked.SuspendLayout()
+            CType(Me.barGM, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barXFader, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barA3, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barB1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barA1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barB12, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barB11, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barA2, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barB5, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barA12, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barB4, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barA7, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barB6, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barB10, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barA8, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barB3, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barB9, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barA11, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barA6, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barB2, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barA4, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barB7, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barA5, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barB8, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barA9, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.barA10, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.SuspendLayout()
+            '
+            'btnClose
+            '
+            Me.btnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Me.btnClose.BackColor = System.Drawing.Color.Transparent
+            Me.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel
+            Me.btnClose.FlatAppearance.BorderSize = 0
+            Me.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
+            Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer))
+            Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+            Me.btnClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+            Me.btnClose.Location = New System.Drawing.Point(1075, 2)
+            Me.btnClose.Margin = New System.Windows.Forms.Padding(32, 14, 32, 14)
+            Me.btnClose.Name = "btnClose"
+            Me.btnClose.Size = New System.Drawing.Size(35, 35)
+            Me.btnClose.TabIndex = 1
+            Me.btnClose.TabStop = False
+            Me.btnClose.Text = "x"
+            Me.btnClose.UseVisualStyleBackColor = False
+            '
+            'title
+            '
+            Me.title.AutoSize = True
+            Me.title.Location = New System.Drawing.Point(41, 21)
+            Me.title.Margin = New System.Windows.Forms.Padding(32, 0, 32, 0)
+            Me.title.Name = "title"
+            Me.title.Size = New System.Drawing.Size(239, 21)
+            Me.title.TabIndex = 3
+            Me.title.Text = "Entity Lighting Board (Two-Scene)"
+            '
+            'timerNewDevice
+            '
+            Me.timerNewDevice.Enabled = True
+            '
+            'lbA1
+            '
+            Me.lbA1.AutoSize = True
+            Me.lbA1.Location = New System.Drawing.Point(69, 177)
+            Me.lbA1.Margin = New System.Windows.Forms.Padding(32, 0, 32, 0)
+            Me.

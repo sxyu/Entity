@@ -1,0 +1,114 @@
+We wish to express our thanks to the following personnel for their invaluable contributions to this project:
+
+-General-
+
+Lead Programmer, Designer, and Tester
+Alex Yu (alexyu99126@gmail.com) of U-Hill Secondary
+
+Theatre Department
+Miss K. Penney
+
+-Source Code-
+
+Image Transition Effect
+Author: Anibal Svarcas
+Source Code from: http://www.elguille.info/colabora/puntoNET/anibal_EfectosTrans.htm (modified)
+License: None
+
+Enttec DMX to USB Driver for .Net
+Author: hippy
+Email: rowanmac@optusnet.com.au
+Website/Source Code: http://members.westnet.com.au/Rowanmac/opendmx.html
+Code Published: July 29 2005
+License: None
+
+CoreAudioApi (Master Volume Control)
+Author: Ray M.
+Source Code: http://www.codeproject.com/script/Articles/ViewDownloads.aspx?aid=18520
+Code Published: May 3 2012
+License: COPL (Click button below to view)
+
+The NAudio Project (Audio Playback)
+Author: Mark Heath
+Source Code: http://naudio.codeplex.com/SourceControl/latest
+License: MS-PL (Click button below to view)
+
+Contributors: (Alphabetical Order)
+Alexandre Mutel
+Alexander Binkert
+AmandaTarafaMas
+balistof
+biermeester
+borman11
+bradb
+Brandon Hansen (kg6ypi)
+csechet
+Choi Seong Hun 
+ChunkWare Music Software
+CKing
+DaMacc
+eejake52
+Florian Rosmann (filoe)
+Giawa
+Greg Fields
+Hfuy
+Iain McCowan
+Idael Cardaso 
+ioctlLR
+Jamie Michael Ewins
+Jang Min Chul
+jannera
+jbaker8935
+jcameron23
+JoeGaggler
+jonahoffmann
+jontdelorme
+Justin Frankel
+K24A3
+Kassoul
+kevinxxx
+Lee Jae Dong
+LionCash
+Lustild
+Lucian Wischik (ljw1004)
+ManuN
+MeelMarcel
+Michael Feld 
+Michael J
+Michael Lehenbauer
+nelsonkidd
+Nigel Redmon
+Nikolaos Georgiou
+Noonien Singh
+Owen Skriloff
+owoudenb
+painmailer
+PPavan
+Pygmy
+Ray Molenkamp
+Robert Bristow-Johnson
+Sasha Hostyn
+Scott Fleischman 
+Selendis
+Simon Clark
+Sirish Bajpai
+Soren Bjerg
+sporn
+Steve Underwood
+Tassadar
+Ted Murphy
+Tiny Simple Tools
+Tobias Fleming
+TomBogle
+Tony Cabello
+Tony Sistemas
+TuneBlade
+topher3683
+Vladimir Rokovanov
+Igor Putin
+Ville Koskinen
+Wyatt Rice
+Yoon Young Suh 
+Yuval Naveh
+Zeratul
+Zsb
