@@ -23,7 +23,7 @@ Partial Class FrmUpdate
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.bw = New System.ComponentModel.BackgroundWorker()
-        Me.pb = New Entity_Updator.flatProgressBar()
+        Me.pb = New Entity_Updater.flatProgressBar()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.lbStep = New System.Windows.Forms.Label()
         Me.lbTitle = New System.Windows.Forms.Label()
@@ -181,7 +181,7 @@ Partial Class FrmUpdate
 
     End Sub
     Friend WithEvents bw As System.ComponentModel.BackgroundWorker
-    Friend WithEvents pb As Entity_Updator.flatProgressBar
+    Friend WithEvents pb As Entity_Updater.flatProgressBar
     Friend WithEvents btnCancel As System.Windows.Forms.Button
     Friend WithEvents lbStep As System.Windows.Forms.Label
     Friend WithEvents lbTitle As System.Windows.Forms.Label

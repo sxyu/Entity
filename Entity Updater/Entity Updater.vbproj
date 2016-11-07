@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3BAF8E8C-4E5A-4BFF-936F-CC06D1956A6F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Entity_Updator.My.MyApplication</StartupObject>
-    <RootNamespace>Entity_Updator</RootNamespace>
+    <StartupObject>Entity_Updater.My.MyApplication</StartupObject>
+    <RootNamespace>Entity_Updater</RootNamespace>
     <AssemblyName>Updater</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
